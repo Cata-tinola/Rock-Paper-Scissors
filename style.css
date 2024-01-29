@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.topBar {
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    padding: 10px;
+    background-color: cadetblue;
+}
+
+/* new css upper animation */
+
+.gameContainer {
+    position: relative;
+    margin: 10px auto;
+    /* border: 2px solid red; */
+    display: flex;
+    height: 210px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.indicator{
+    font-size: 50px;
+}
+
+
+.gameContainer img {
+    width: 210px;
+    height: 170px;
+    border-radius: 100px;
+
+}
+
+.selection {
+    position:absolute;
+    top: 14px;
+    /* border: 2px solid; */
+    rotate: 90deg;
+    transform: scaleX(-1);
+}
+
+.compSelec {
+    position: absolute;
+    rotate: -90deg;
+    right: 35%;
+    animation-name: option;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.playerSelec {
+    position: absolute;
+    left: 35%;
+    animation-name: option1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* @keyframes option {
+    from {
+        right: 10px
+    }
+
+    to {
+        right: 35%;
+    }
+}
+@keyframes option1 {
+    from {
+        left: 10px
+    }
+
+    to {
+        left: 35%;
+    }
+} */
+
+/* old Css */
+
+.container {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.move {
+    margin: 10px 12px;
+    /* padding: 2px 5px; */
+    border: 3px solid cadetblue;
+    border-radius: 240px;
+}
+
+.move img {
+    width: 230px;
+    border-radius: 200px;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+
+table {
+    font-size: 25px;
+    /* border-collapse: collapse; */
+}
+
+th {
+    font-size: 30px;
+}
+
+td,
+th {
+    text-align: center;
+    padding: 8px;
+}
+
+.turn {
+    border: 2px solid cadetblue;
+    color: black;
+    border-radius: 60px;
+    padding: 15px;
+    margin: 8px;
+    font-size: 35px;
+
+}
+
+.pick {
+    background-color: rgb(255, 247, 11);
+}
+
+.lost {
+    background-color: rgb(247, 86, 86);
+}
+
+.win {
+    background-color: rgb(20, 253, 20);
+}

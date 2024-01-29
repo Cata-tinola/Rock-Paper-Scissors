@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocK-Paper-Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="topBar">
+            <p>
+                Rock Paper Scissors
+            </p>
+        </div>
+    </header>
+    <div class="gameContainer">
+        <div class="indicator">You</div>
+        <div class="selection playerSelec">
+            <!-- <img src="rock.png" alt=""> -->
+        </div>
+        <div class="selection compSelec">
+            <!-- <img src="paper.png" alt=""> -->
+        </div>
+        <div class="indicator">Computer</div>
+
+    </div>
+    <div class="container">
+        <div class="move" id="paper">
+            <img src="paper.png" alt="Paper" >
+        </div>
+        <div class="move" id="rock">
+            <img src="rock.png" alt="Rock" >
+        </div>
+        <div class="move" id="scissors">
+            <img src="scissors.png" alt="Scissors" >
+        </div>
+
+    </div>
+
+    <div class="container2">
+        <div class="score">
+       <table>
+        <tr>
+            <th id="you">0</th>
+            <th id="comp">0</th>
+        </tr>
+        <tr>
+            <td>You</td>
+            <td>Computer</td>
+        </tr>
+       </table>  
+        </div>
+        <div class="turn pick">
+            <p class="text">Pick Your Move</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
